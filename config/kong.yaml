@@ -9,4 +9,4 @@ services:
     routes:
     - name: app_1
       hosts:
-      - host5.com.br
+      - laboratorio.pro.br
