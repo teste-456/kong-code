@@ -2,13 +2,11 @@ _format_version: "2.1"
 _transform: true
 
 services:
- - url: http://app_1
-   name: app_1
-   port: 80
-   protocol: http
-   routes:
-   - name: app_1
-     hosts:
-     - laboratorio.pro.br
-     protocol: http
-     strip_path: true
+  - url: http://app_1
+    name: app_1
+    port: 80
+    protocol: http
+    routes:
+    - name: app_1
+      hosts:
+      - host5.com.br
