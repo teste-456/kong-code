@@ -2,11 +2,33 @@ _format_version: "2.1"
 _transform: true
 
 services:
-  - url: http://app_1
-    name: app_1
+  - name: app_1
+    url: http://app_1
     port: 80
     protocol: http
     routes:
     - name: app_1
       hosts:
       - laboratorio.pro.br
+  
+  - name: acme-dummy
+    url: http://127.0.0.1:65535
+    routes:
+      - name: acme-dummy
+        protocols:
+          - http
+        paths:
+          - /.well-known/acme-challenge
+
+plugins:
+  - name: acme
+    config:
+      account_email: luizedfigueira@gmail.com
+      domains:
+        - "laboratorio.pro.br"
+      tos_accepted: true
+      storage: redis
+      storage_config:
+        redis:
+          host: redis.service
+          port: 6379
