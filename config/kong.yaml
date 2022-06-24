@@ -1,5 +1,5 @@
 _format_version: "2.1"
-_transform: true
+#_transform: true
 
 services:
   - name: app_1
@@ -9,8 +9,9 @@ services:
     routes:
     - name: app_1
       hosts:
-      - laboratorio.pro.br
-  
+      - host5.com.br
+      #- laboratorio.pro.br
+      
   - name: acme-dummy
     url: http://127.0.0.1:65535
     routes:
