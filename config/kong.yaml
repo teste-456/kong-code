@@ -9,8 +9,8 @@ services:
     routes:
     - name: app_1
       hosts:
-      - host5.com.br
-      #- laboratorio.pro.br
+      #- host5.com.br
+      - laboratorio.pro.br
       
   - name: acme-dummy
     url: http://127.0.0.1:65535
