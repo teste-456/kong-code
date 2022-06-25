@@ -10,7 +10,7 @@ _format_version: "2.1"
 #     - name: app_1
 #       hosts:
 #       #- host5.com.br
-#       - laboratorio.pro.br
+#       - labapp.pro.br
       
 #   - name: acme-dummy
 #     url: http://127.0.0.1:65535
@@ -26,7 +26,7 @@ _format_version: "2.1"
 #     config:
 #       account_email: luizedfigueira@gmail.com
 #       domains:
-#         - laboratorio.pro.br
+#         - labapp.pro.br
 #       tos_accepted: true
 #       storage: redis
 #       storage_config:
@@ -46,7 +46,7 @@ services:
     - name: app_1
       hosts:
       #- host5.com.br
-      - laboratorio.pro.br
+      - labapp.pro.br
 
   - name: acme-dummy
     url: http://127.0.0.1:65535
@@ -62,7 +62,7 @@ plugins:
     config:
       account_email: luizedfigueira@gmail.com
       domains:
-        - laboratorio.pro.br
+        - labapp.pro.br
       tos_accepted: true
       storage: redis
       storage_config:

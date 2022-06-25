@@ -14,4 +14,4 @@ curl http://localhost:8001/plugins \
   -d name=acme \
   -d config.account_email=luizedfigueira@gmail.com \
   -d config.tos_accepted=true \
-  -d config.domains[]=laboratorio.pro.br
+  -d config.domains[]=labapp.pro.br

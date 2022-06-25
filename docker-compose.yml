@@ -64,7 +64,7 @@ services:
       # - KONG_PG_HOST=postgres
       # - KONG_PG_USER=kong_db_user
       # - KONG_PG_PASSWORD=kong_db_password
-      - KONG_CASSANDRA_CONTACT_POINTS=postgres
+      #- KONG_CASSANDRA_CONTACT_POINTS=postgres
       - KONG_PROXY_ACCESS_LOG=/dev/stdout
       - KONG_ADMIN_ACCESS_LOG=/dev/stdout
       - KONG_PROXY_ERROR_LOG=/dev/stderr
