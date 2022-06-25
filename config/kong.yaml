@@ -1,6 +1,42 @@
 _format_version: "2.1"
 #_transform: true
 
+# services:
+#   - name: app_1
+#     url: http://app_1
+#     port: 80
+#     protocol: http
+#     routes:
+#     - name: app_1
+#       hosts:
+#       #- host5.com.br
+#       - laboratorio.pro.br
+      
+#   - name: acme-dummy
+#     url: http://127.0.0.1:65535
+#     routes:
+#       - name: acme-dummy
+#         protocols:
+#           - http
+#         paths:
+#           - /.well-known/acme-challenge
+
+# plugins:
+#   - name: acme
+#     config:
+#       account_email: luizedfigueira@gmail.com
+#       domains:
+#         - laboratorio.pro.br
+#       tos_accepted: true
+#       storage: redis
+#       storage_config:
+#         redis:
+#           host: redis
+#           port: 6379
+
+
+
+
 services:
   - name: app_1
     url: http://app_1
@@ -11,7 +47,7 @@ services:
       hosts:
       #- host5.com.br
       - laboratorio.pro.br
-      
+
   - name: acme-dummy
     url: http://127.0.0.1:65535
     routes:
@@ -32,4 +68,3 @@ plugins:
       storage_config:
         redis:
           host: redis
-          port: 6379

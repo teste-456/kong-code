@@ -59,11 +59,11 @@ services:
     environment:
       - LC_CTYPE=en_US.UTF-8
       - LC_ALL=en_US.UTF-8
-      #- KONG_DATABASE=off
-      - KONG_PG_DATABASE=kong
-      - KONG_PG_HOST=postgres
-      - KONG_PG_USER=kong_db_user
-      - KONG_PG_PASSWORD=kong_db_password
+      - KONG_DATABASE=off
+      # - KONG_PG_DATABASE=kong
+      # - KONG_PG_HOST=postgres
+      # - KONG_PG_USER=kong_db_user
+      # - KONG_PG_PASSWORD=kong_db_password
       - KONG_CASSANDRA_CONTACT_POINTS=postgres
       - KONG_PROXY_ACCESS_LOG=/dev/stdout
       - KONG_ADMIN_ACCESS_LOG=/dev/stdout
@@ -72,7 +72,7 @@ services:
       - KONG_ADMIN_LISTEN=0.0.0.0:8001, 0.0.0.0:8444 ssl
       - KONG_PROXY_LISTEN=0.0.0.0:80, 0.0.0.0:8443 http2 ssl
       - KONG_LUA_SSL_TRUSTED_CERTIFICATE=system
-      #- KONG_DECLARATIVE_CONFIG=/opt/kong/kong.yaml
+      - KONG_DECLARATIVE_CONFIG=/opt/kong/kong.yaml
     healthcheck:
       test: ["CMD", "curl", "-f", "http://kong:8001"]
       interval: 5s
@@ -90,7 +90,7 @@ services:
       - kong-setup
     volumes:
       - ./config:/opt/kong
-      - ./etc:/etc/kong
+      #- ./etc:/etc/kong
 
 
 
